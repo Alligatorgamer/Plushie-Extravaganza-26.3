@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"id": "plushie-extravaganza",
+	"version": "${version}",
+	"name": "Plushie Extravaganza",
+	"description": "This is a mod that adds several different plushies from several different fandoms!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://alligator.net/",
+		"sources": ""
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/plushie-extravaganza/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.alligator.plushie_extravaganza.PlushieExtravaganza"
+		],
+		"fabric-datagen": [
+			"net.alligator.plushie_extravaganza.PlushieExtravaganzaDataGenerator"
+		]
+	},
+	"mixins": [
+		"plushie-extravaganza.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.20.1",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
