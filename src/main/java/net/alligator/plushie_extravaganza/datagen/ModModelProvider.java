@@ -16,6 +16,15 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateBlockStateModels(BlockModelGenerators blockModelGenerators) {
         blockModelGenerators.createTrivialCube(ModBlocks.COMPRESSED_COTTON);
+        blockModelGenerators.createNonTemplateHorizontalBlock(ModBlocks.SANS_PLUSHIE);
+        blockModelGenerators.createNonTemplateHorizontalBlock(ModBlocks.PAPYRUS_PLUSHIE);
+        blockModelGenerators.createNonTemplateHorizontalBlock(ModBlocks.TORIEL_PLUSHIE);
+        blockModelGenerators.createNonTemplateHorizontalBlock(ModBlocks.FRISK_PLUSHIE);
+        blockModelGenerators.createNonTemplateHorizontalBlock(ModBlocks.CHARA_PLUSHIE);
+        blockModelGenerators.createNonTemplateHorizontalBlock(ModBlocks.UNDYNE_PLUSHIE);
+        blockModelGenerators.createNonTemplateHorizontalBlock(ModBlocks.ALPHYS_PLUSHIE);
+        blockModelGenerators.createNonTemplateHorizontalBlock(ModBlocks.METTATON_PLUSHIE);
+        blockModelGenerators.createNonTemplateHorizontalBlock(ModBlocks.TEMPLATE_PLUSHIE);
 
     }
 

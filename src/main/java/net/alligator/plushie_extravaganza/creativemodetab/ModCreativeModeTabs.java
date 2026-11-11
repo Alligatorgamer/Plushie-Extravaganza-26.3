@@ -19,6 +19,15 @@ public class ModCreativeModeTabs {
                     .displayItems((parameters, output) -> {
                         output.accept(ModItems.COTTON);
                         output.accept(ModBlocks.COMPRESSED_COTTON);
+                        output.accept(ModBlocks.SANS_PLUSHIE);
+                        output.accept(ModBlocks.PAPYRUS_PLUSHIE);
+                        output.accept(ModBlocks.TORIEL_PLUSHIE);
+                        output.accept(ModBlocks.FRISK_PLUSHIE);
+                        output.accept(ModBlocks.CHARA_PLUSHIE);
+                        output.accept(ModBlocks.UNDYNE_PLUSHIE);
+                        output.accept(ModBlocks.ALPHYS_PLUSHIE);
+                        output.accept(ModBlocks.METTATON_PLUSHIE);
+                        output.accept(ModBlocks.TEMPLATE_PLUSHIE);
 
 
                     }).build());

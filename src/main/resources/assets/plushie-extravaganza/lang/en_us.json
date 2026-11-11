@@ -1,6 +1,17 @@
 {
   "item.plushie-extravaganza.cotton": "Cotton",
+
   "block.plushie-extravaganza.compressed_cotton": "Compressed Cotton",
+  "block.plushie-extravaganza.sans_plushie": "Sans Plushie",
+  "block.plushie-extravaganza.papyrus_plushie": "Papyrus Plushie",
+  "block.plushie-extravaganza.toriel_plushie": "Toriel Plushie",
+  "block.plushie-extravaganza.frisk_plushie": "Frisk Plushie",
+  "block.plushie-extravaganza.chara_plushie": "Chara Plushie",
+  "block.plushie-extravaganza.undyne_plushie": "Undyne the Undying Plushie",
+  "block.plushie-extravaganza.alphys_plushie": "Alphys Plushie",
+  "block.plushie-extravaganza.mettaton_plushie": "Mettaton Plushie",
+  "block.plushie-extravaganza.template_plushie": "Template Plushie",
+
   "creativemodetab.plushie-extravaganza.plushie_xtravaganza_items": "Plushie Extravaganza Items"
 
 

@@ -1,6 +1,7 @@
 package net.alligator.plushie_extravaganza;
 
 import net.alligator.plushie_extravaganza.block.ModBlocks;
+import net.alligator.plushie_extravaganza.block.entity.ModBlockEntities;
 import net.alligator.plushie_extravaganza.creativemodetab.ModCreativeModeTabs;
 import net.alligator.plushie_extravaganza.item.ModItems;
 import net.fabricmc.api.ModInitializer;
@@ -20,6 +21,7 @@ public class PlushieExtravaganza implements ModInitializer {
 
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+		ModBlockEntities.registerBlockEntities();
 	}
 
 	public static Identifier id(String path) {
