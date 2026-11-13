@@ -1,6 +1,10 @@
 package net.alligator.plushie_extravaganza.block.custom;
 
+import net.alligator.plushie_extravaganza.block.ModBlocks;
+import net.alligator.plushie_extravaganza.block.entity.ModBlockEntities;
 import net.alligator.plushie_extravaganza.block.entity.custom.PlushieEntity;
+import net.alligator.plushie_extravaganza.block.entity.renderer.PlushieEntityRendererState;
+import net.minecraft.client.model.Model;
 import net.minecraft.core.BlockPos;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
@@ -12,10 +16,14 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.BaseEntityBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.HorizontalDirectionalBlock;
+import net.minecraft.world.level.block.RenderShape;
 import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.block.entity.BlockEntityTicker;
+import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.Property;
+import net.minecraft.world.level.storage.loot.providers.number.ints.Maximum;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
@@ -50,10 +58,24 @@ public class Plushie extends BaseEntityBlock {
     }
 
     @Override
+    protected RenderShape getRenderShape(BlockState state) {
+        return RenderShape.INVISIBLE;
+    }
+    PlushieEntity plushieEntity;
+    @Override
+    public @Nullable <T extends BlockEntity> BlockEntityTicker<T> getTicker(Level level, BlockState blockState, BlockEntityType<T> type) {
+        return createTickerHelper(type, ModBlockEntities.PLUSHIE_BE, PlushieEntity::tick);
+    }
+
+    @Override
     protected InteractionResult useWithoutItem(BlockState state, Level level, BlockPos pos, Player player, BlockHitResult hitResult) {
-        if (level.getBlockEntity(pos) instanceof PlushieEntity plushieEntity) {
-            level.playSound(player, pos, SoundEvents.BLAZE_DEATH, SoundSource.BLOCKS, 2f, 1f);
+        if (!(level.getBlockEntity(pos) instanceof PlushieEntity plushieEntity)) {
+            return super.useWithoutItem(state, level, pos, player, hitResult);
         }
-        return InteractionResult.SUCCESS;
+        plushieEntity.setSquish(0.5f);
+        plushieEntity.setTimer(plushieEntity.UNSQUISH);
+
+            return InteractionResult.SUCCESS;
+
     }
 }

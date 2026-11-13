@@ -27,6 +27,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.UNDYNE_PLUSHIE);
                         output.accept(ModBlocks.ALPHYS_PLUSHIE);
                         output.accept(ModBlocks.METTATON_PLUSHIE);
+                        output.accept(ModBlocks.ASGORE_PLUSHIE);
                         output.accept(ModBlocks.TEMPLATE_PLUSHIE);
 
 

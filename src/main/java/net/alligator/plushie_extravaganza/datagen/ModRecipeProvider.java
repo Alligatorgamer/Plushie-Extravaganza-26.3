@@ -39,6 +39,15 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .group("plushie")
                         .save(output);
 
+                shaped(RecipeCategory.MISC,ModBlocks.SANS_PLUSHIE)
+                        .pattern(" C ")
+                        .pattern("CCC")
+                        .pattern(" C ")
+                        .define('C', ModItems.COTTON)
+                        .unlockedBy(getHasName(ModItems.COTTON), has(ModItems.COTTON))
+                        .group("plushie")
+                        .save(output);
+
                 shapeless(RecipeCategory.MISC, ModItems.COTTON,9)
                         .requires(ModBlocks.COMPRESSED_COTTON)
                         .unlockedBy(getHasName(ModBlocks.COMPRESSED_COTTON),has(ModBlocks.COMPRESSED_COTTON))

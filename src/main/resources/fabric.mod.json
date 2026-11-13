@@ -16,7 +16,10 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"net.alligator.plushie_extravaganza.PlushieExtravaganza"
+		"net.alligator.plushie_extravaganza.PlushieExtravaganza"
+		],
+		"client": [
+			"net.alligator.plushie_extravaganza.PlushieExtravaganzaClient"
 		],
 		"fabric-datagen": [
 			"net.alligator.plushie_extravaganza.PlushieExtravaganzaDataGenerator"

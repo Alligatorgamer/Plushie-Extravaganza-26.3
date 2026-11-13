@@ -22,7 +22,7 @@ public class ModBlocks {
             properties -> new Block(properties.strength(1f).sound(SoundType.WOOL)));
 
     public static final Block SANS_PLUSHIE = registerBlock("sans_plushie",
-            properties -> new Plushie(properties.strength(1f).sound(SoundType.WOOL).noOcclusion()));
+            properties -> new SansPlushie(properties.strength(1f).sound(SoundType.WOOL).noOcclusion()));
     public static final Block PAPYRUS_PLUSHIE = registerBlock("papyrus_plushie",
             properties -> new Plushie(properties.strength(1f).sound(SoundType.WOOL).noOcclusion()));
     public static final Block TORIEL_PLUSHIE = registerBlock("toriel_plushie",
@@ -37,6 +37,9 @@ public class ModBlocks {
             properties -> new Plushie(properties.strength(1f).sound(SoundType.WOOL).noOcclusion()));
     public static final Block METTATON_PLUSHIE = registerBlock("mettaton_plushie",
             properties -> new Plushie(properties.strength(1f).sound(SoundType.WOOL).noOcclusion()));
+    public static final Block ASGORE_PLUSHIE = registerBlock("asgore_plushie",
+            properties -> new Plushie(properties.strength(1f).sound(SoundType.WOOL).noOcclusion()));
+
     public static final Block TEMPLATE_PLUSHIE = registerBlock("template_plushie",
             properties -> new Plushie(properties.strength(1f).sound(SoundType.WOOL).noOcclusion()));
 

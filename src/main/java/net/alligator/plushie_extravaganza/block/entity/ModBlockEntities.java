@@ -12,7 +12,19 @@ import net.minecraft.world.level.block.entity.BlockEntityType;
 public class ModBlockEntities {
     public static final BlockEntityType<PlushieEntity> PLUSHIE_BE =
             Registry.register(BuiltInRegistries.BLOCK_ENTITY_TYPE, Identifier.fromNamespaceAndPath(PlushieExtravaganza.MOD_ID, "plushie_be"),
-                    FabricBlockEntityTypeBuilder.create(PlushieEntity::new, ModBlocks.TEMPLATE_PLUSHIE).build());
+                    FabricBlockEntityTypeBuilder.create(PlushieEntity::new,
+                            ModBlocks.TEMPLATE_PLUSHIE,
+                            ModBlocks.SANS_PLUSHIE,
+                            ModBlocks.PAPYRUS_PLUSHIE,
+                            ModBlocks.TORIEL_PLUSHIE,
+                            ModBlocks.FRISK_PLUSHIE,
+                            ModBlocks.CHARA_PLUSHIE,
+                            ModBlocks.UNDYNE_PLUSHIE,
+                            ModBlocks.ALPHYS_PLUSHIE,
+                            ModBlocks.METTATON_PLUSHIE,
+                            ModBlocks.ASGORE_PLUSHIE
+                    ).build());
+
 
 
     public static void registerBlockEntities() {
