@@ -24,6 +24,7 @@ public class ModBlockLootTableProvider extends FabricBlockLootSubProvider {
         dropSelf(ModBlocks.ALPHYS_PLUSHIE);
         dropSelf(ModBlocks.METTATON_PLUSHIE);
         dropSelf(ModBlocks.ASGORE_PLUSHIE);
+        dropSelf(ModBlocks.ASRIEL_PLUSHIE);
         dropSelf(ModBlocks.TEMPLATE_PLUSHIE);
     }
 }

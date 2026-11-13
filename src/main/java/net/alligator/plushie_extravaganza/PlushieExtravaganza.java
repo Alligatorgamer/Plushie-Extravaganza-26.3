@@ -4,6 +4,7 @@ import net.alligator.plushie_extravaganza.block.ModBlocks;
 import net.alligator.plushie_extravaganza.block.entity.ModBlockEntities;
 import net.alligator.plushie_extravaganza.creativemodetab.ModCreativeModeTabs;
 import net.alligator.plushie_extravaganza.item.ModItems;
+import net.alligator.plushie_extravaganza.sound.ModSounds;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.resources.Identifier;
@@ -22,6 +23,7 @@ public class PlushieExtravaganza implements ModInitializer {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 		ModBlockEntities.registerBlockEntities();
+		ModSounds.registerSounds();
 	}
 
 	public static Identifier id(String path) {

@@ -22,7 +22,8 @@ public class ModBlockEntities {
                             ModBlocks.UNDYNE_PLUSHIE,
                             ModBlocks.ALPHYS_PLUSHIE,
                             ModBlocks.METTATON_PLUSHIE,
-                            ModBlocks.ASGORE_PLUSHIE
+                            ModBlocks.ASGORE_PLUSHIE,
+                            ModBlocks.ASRIEL_PLUSHIE
                     ).build());
 
 

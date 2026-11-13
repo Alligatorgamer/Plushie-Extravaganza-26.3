@@ -25,6 +25,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockModelGenerators.createNonTemplateHorizontalBlock(ModBlocks.ALPHYS_PLUSHIE);
         blockModelGenerators.createNonTemplateHorizontalBlock(ModBlocks.METTATON_PLUSHIE);
         blockModelGenerators.createNonTemplateHorizontalBlock(ModBlocks.ASGORE_PLUSHIE);
+        blockModelGenerators.createNonTemplateHorizontalBlock(ModBlocks.ASRIEL_PLUSHIE);
         blockModelGenerators.createNonTemplateHorizontalBlock(ModBlocks.TEMPLATE_PLUSHIE);
 
     }

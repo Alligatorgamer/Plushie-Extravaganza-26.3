@@ -4,6 +4,7 @@ import net.alligator.plushie_extravaganza.block.ModBlocks;
 import net.alligator.plushie_extravaganza.block.entity.ModBlockEntities;
 import net.alligator.plushie_extravaganza.block.entity.custom.PlushieEntity;
 import net.alligator.plushie_extravaganza.block.entity.renderer.PlushieEntityRendererState;
+import net.alligator.plushie_extravaganza.sound.ModSounds;
 import net.minecraft.client.model.Model;
 import net.minecraft.core.BlockPos;
 import net.minecraft.sounds.SoundEvents;
@@ -72,6 +73,8 @@ public class Plushie extends BaseEntityBlock {
         if (!(level.getBlockEntity(pos) instanceof PlushieEntity plushieEntity)) {
             return super.useWithoutItem(state, level, pos, player, hitResult);
         }
+        level.playSound(null,pos, ModSounds.PLUSHIE_SQUISH,SoundSource.BLOCKS,1,
+                0.8f + level.getRandom().nextFloat()*0.4f);
         plushieEntity.setSquish(0.5f);
         plushieEntity.setTimer(plushieEntity.UNSQUISH);
 
