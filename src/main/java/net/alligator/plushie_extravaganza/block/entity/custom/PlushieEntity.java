@@ -38,9 +38,7 @@ public class PlushieEntity extends BlockEntity {
 
     @Override
     protected void saveAdditional(ValueOutput output) {
-        output.putFloat("squish",this.squish);
         output.putInt("timer",this.timer);
-        setChanged();
 
         super.saveAdditional(output);
     }
@@ -49,30 +47,7 @@ public class PlushieEntity extends BlockEntity {
     protected void loadAdditional(ValueInput input) {
         super.loadAdditional(input);
 
-        this.squish = input.getFloatOr("squish",1);
-        this.squish = input.getIntOr("timer",0);
-    }
-
-    private boolean enabled;
-
-    public boolean getEnabled() {
-        return enabled;
-    }
-
-    public void setEnabled(boolean enabled) {
-        this.enabled = enabled;
-        setChanged();
-    }
-
-    private float squish;
-
-    public float getSquish() {
-        return squish;
-    }
-
-    public void setSquish(float value) {
-        this.squish = Math.max(value, 0);
-        setChanged();
+        this.timer = input.getIntOr("timer",0);
     }
     private int timer;
 

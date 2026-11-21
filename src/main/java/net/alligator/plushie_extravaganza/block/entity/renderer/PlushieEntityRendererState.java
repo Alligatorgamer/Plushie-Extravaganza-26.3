@@ -7,7 +7,6 @@ import net.minecraft.world.level.Level;
 public class PlushieEntityRendererState extends BlockEntityRenderState {
     public float squish;
     public int timer;
-    public float f;
 
     final BlockModelRenderState blockModelRenderState = new BlockModelRenderState();
 }
