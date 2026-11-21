@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "plushie-extravaganza:template_plushie",
+  "result": {
+    "id": "plushie-extravaganza:frisk_plushie"
+  }
+}

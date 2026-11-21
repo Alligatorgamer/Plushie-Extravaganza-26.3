@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "condition": {
+        "type": "minecraft:survives_explosion"
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "plushie-extravaganza:noelle_dark_wr_plushie"
+        }
+      ],
+      "rolls": 1
+    }
+  ]
+}

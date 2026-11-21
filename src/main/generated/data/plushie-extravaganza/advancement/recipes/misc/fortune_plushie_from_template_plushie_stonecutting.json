@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_template_plushie": {
+      "conditions": {
+        "items": [
+          {
+            "items": "plushie-extravaganza:template_plushie"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipes": "plushie-extravaganza:fortune_plushie_from_template_plushie_stonecutting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_template_plushie"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "plushie-extravaganza:fortune_plushie_from_template_plushie_stonecutting"
+    ]
+  }
+}

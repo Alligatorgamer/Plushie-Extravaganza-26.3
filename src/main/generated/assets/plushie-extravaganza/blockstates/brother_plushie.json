@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "plushie-extravaganza:block/brother_plushie",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "plushie-extravaganza:block/brother_plushie"
+    },
+    "facing=south": {
+      "model": "plushie-extravaganza:block/brother_plushie",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "plushie-extravaganza:block/brother_plushie",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "brother_squish": {
+    "sounds": [
+      "plushie-extravaganza:cry1",
+      "plushie-extravaganza:cry2",
+      "plushie-extravaganza:cry3",
+      "plushie-extravaganza:cry4"
+    ],
+    "subtitle": "subtitles.plushie-extravaganza.brother_squish"
+  },
+  "cipher_squish": {
+    "sounds": [
+      "plushie-extravaganza:a5",
+      "plushie-extravaganza:b5",
+      "plushie-extravaganza:c5",
+      "plushie-extravaganza:c6",
+      "plushie-extravaganza:c_5",
+      "plushie-extravaganza:d5",
+      "plushie-extravaganza:d6",
+      "plushie-extravaganza:e5",
+      "plushie-extravaganza:g5"
+    ],
+    "subtitle": "subtitles.plushie-extravaganza.cipher_squish"
+  },
+  "crescent_squish": {
+    "sounds": [
+      "plushie-extravaganza:crescent1",
+      "plushie-extravaganza:crescent2",
+      "plushie-extravaganza:crescent3",
+      "plushie-extravaganza:crescent4"
+    ],
+    "subtitle": "subtitles.plushie-extravaganza.crescent_squish"
+  },
+  "fortune_squish": {
+    "sounds": [
+      "plushie-extravaganza:fortune_hit1",
+      "plushie-extravaganza:fortune_hit2",
+      "plushie-extravaganza:fortune_hit3"
+    ],
+    "subtitle": "subtitles.plushie-extravaganza.fortune_squish"
+  },
+  "hunterspider_squish": {
+    "sounds": [
+      "plushie-extravaganza:spider_flinch1",
+      "plushie-extravaganza:spider_flinch2",
+      "plushie-extravaganza:spider_flinch3"
+    ],
+    "subtitle": "subtitles.plushie-extravaganza.hunterspider_squish"
+  },
+  "lsera_squish": {
+    "sounds": [
+      "plushie-extravaganza:lseraphase1",
+      "plushie-extravaganza:lseraphase2",
+      "plushie-extravaganza:lseraphase3"
+    ],
+    "subtitle": "subtitles.plushie-extravaganza.lsera_squish"
+  },
+  "plushie_squish": {
+    "sounds": [
+      "plushie-extravaganza:plushie_squish"
+    ],
+    "subtitle": "sounds.plushie-extravaganza.plushie_squish"
+  },
+  "scrutiny_squish": {
+    "sounds": [
+      "plushie-extravaganza:scrutiny_spawn1",
+      "plushie-extravaganza:scrutiny_spawn2",
+      "plushie-extravaganza:scrutiny_spawn3",
+      "plushie-extravaganza:scrutiny_spawn4"
+    ],
+    "subtitle": "subtitles.plushie-extravaganza.scrutiny_squish"
+  },
+  "tunnelmaster_squish": {
+    "sounds": [
+      "plushie-extravaganza:tunnelmaster_open1",
+      "plushie-extravaganza:tunnelmaster_open2",
+      "plushie-extravaganza:tunnelmaster_open3",
+      "plushie-extravaganza:tunnelmaster_open4",
+      "plushie-extravaganza:tunnelmaster_open5"
+    ],
+    "subtitle": "subtitles.plushie-extravaganza.tunnelmaster_squish"
+  }
+}
