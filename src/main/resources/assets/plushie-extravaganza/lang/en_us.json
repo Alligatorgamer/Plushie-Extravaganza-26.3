@@ -1,5 +1,6 @@
 {
   "item.plushie-extravaganza.cotton": "Cotton",
+  "item.plushie-extravaganza.cotton_seeds": "Cotton Seeds",
 
   "block.plushie-extravaganza.compressed_cotton": "Compressed Cotton",
 
@@ -13,7 +14,50 @@
   "block.plushie-extravaganza.mettaton_plushie": "Mettaton Plushie",
   "block.plushie-extravaganza.asgore_plushie": "Asgore Plushie",
   "block.plushie-extravaganza.asriel_plushie": "Asriel: God of Hyperdeath Plushie",
+  "block.plushie-extravaganza.muffet_plushie": "Muffet Plushie",
+  "block.plushie-extravaganza.gaster_plushie": "W.D Gaster Plushie",
+
+
+  "block.plushie-extravaganza.kris_light_wr_plushie": "Kris (Light World) Plushie",
+  "block.plushie-extravaganza.kris_dark_wr_plushie": "Kris (Dark World) Plushie",
+  "block.plushie-extravaganza.susie_light_wr_plushie": "Susie (Light World) Plushie",
+  "block.plushie-extravaganza.susie_dark_wr_plushie": "Susie (Dark World) Plushie",
+  "block.plushie-extravaganza.ralsei_plushie": "Ralsei Plushie",
+  "block.plushie-extravaganza.ralsei_hat_plushie": "Ralsei (With Hat) Plushie",
+  "block.plushie-extravaganza.noelle_light_wr_plushie": "Noelle (Light World) Plushie",
+  "block.plushie-extravaganza.noelle_dark_wr_plushie": "Noelle (Dark World) Plushie",
+  "block.plushie-extravaganza.berdly_light_wr_plushie": "Berdly (Light World) Plushie",
+  "block.plushie-extravaganza.berdly_dark_wr_plushie": "Berdly (Dark World) Plushie",
+  "block.plushie-extravaganza.lancer_plushie": "Lancer Plushie",
+  "block.plushie-extravaganza.king_plushie": "King Plushie",
+  "block.plushie-extravaganza.queen_plushie": "Queen Plushie",
+  "block.plushie-extravaganza.jevil_plushie": "Jevil Plushie",
+  "block.plushie-extravaganza.tenna_plushie": "Tenna Plushie",
+  "block.plushie-extravaganza.spamton_plushie": "Spamton Plushie",
+  "block.plushie-extravaganza.roaring_knight_plushie": "Roaring Knight Plushie",
+  "block.plushie-extravaganza.gerson_plushie": "Gerson Plushie",
+  "block.plushie-extravaganza.flowery_plushie": "Flowery Plushie",
+  "block.plushie-extravaganza.yellow_plushie": "Yellow Plushie",
+  "block.plushie-extravaganza.blue_plushie": "Blue Plushie",
+  "block.plushie-extravaganza.aqua_plushie": "Aqua Plushie",
+  "block.plushie-extravaganza.orange_plushie": "Orange Plushie",
+  "block.plushie-extravaganza.green_plushie": "Green Plushie",
+  "block.plushie-extravaganza.seth_plushie": "Seth Plushie",
+  "block.plushie-extravaganza.pink_plushie": "Pink Plushie",
+
+  "block.plushie-extravaganza.tunnelmaster_plushie": "Tunnelmaster Plushie",
+  "block.plushie-extravaganza.hunter_spider_plushie": "Hunter Spider Plushie",
+  "block.plushie-extravaganza.cipher_plushie": "Cipher Plushie",
+  "block.plushie-extravaganza.brother_plushie": "Brother Plushie",
+  "block.plushie-extravaganza.crescent_plushie": "Crescent Plushie",
+  "block.plushie-extravaganza.scrutiny_plushie": "Scrutiny Plushie",
+  "block.plushie-extravaganza.fortune_plushie": "Fortune Plushie",
+  "block.plushie-extravaganza.famine_plushie": "Famine Plushie",
+  "block.plushie-extravaganza.lsera_plushie": "Lsera Plushie",
+
+
   "block.plushie-extravaganza.template_plushie": "Template Plushie",
+  "block.plushie-extravaganza.cotton_plant": "Cotton Plant",
 
   "sounds.plushie-extravaganza.plushie_squish": "Plushie Squished",
 

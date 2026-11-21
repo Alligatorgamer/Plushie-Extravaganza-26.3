@@ -6,12 +6,16 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
+import net.minecraft.network.protocol.game.ClientboundBlockEntityDataPacket;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.storage.ValueInput;
+import net.minecraft.world.level.storage.ValueOutput;
 import org.jspecify.annotations.Nullable;
 
 public class PlushieEntity extends BlockEntity {
@@ -22,10 +26,33 @@ public class PlushieEntity extends BlockEntity {
     @Override
     public void setChanged() {
         super.setChanged();
+        if (level == null) return;
+
+        BlockState state = getBlockState();
+        level.sendBlockUpdated(worldPosition, this.getBlockState(), this.getBlockState(), Block.UPDATE_ALL);
+
         if(level.isClientSide()) {
             level.sendBlockUpdated(worldPosition, this.getBlockState(), this.getBlockState(), 3);
         }
     }
+
+    @Override
+    protected void saveAdditional(ValueOutput output) {
+        output.putFloat("squish",this.squish);
+        output.putInt("timer",this.timer);
+        setChanged();
+
+        super.saveAdditional(output);
+    }
+
+    @Override
+    protected void loadAdditional(ValueInput input) {
+        super.loadAdditional(input);
+
+        this.squish = input.getFloatOr("squish",1);
+        this.squish = input.getIntOr("timer",0);
+    }
+
     private boolean enabled;
 
     public boolean getEnabled() {
@@ -58,7 +85,6 @@ public class PlushieEntity extends BlockEntity {
         setChanged();
     }
 
-
     @Override
     public CompoundTag getUpdateTag(HolderLookup.Provider registries) {
         return saveWithoutMetadata(registries);
@@ -66,7 +92,7 @@ public class PlushieEntity extends BlockEntity {
 
     @Override
     public @Nullable Packet<ClientGamePacketListener> getUpdatePacket() {
-        return super.getUpdatePacket();
+        return ClientboundBlockEntityDataPacket.create(this);
     }
 
     public static final int UNSQUISH = 4;

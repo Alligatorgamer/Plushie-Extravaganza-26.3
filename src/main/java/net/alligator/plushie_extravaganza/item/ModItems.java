@@ -1,12 +1,14 @@
 package net.alligator.plushie_extravaganza.item;
 
 import net.alligator.plushie_extravaganza.PlushieExtravaganza;
+import net.alligator.plushie_extravaganza.block.ModBlocks;
 import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
 
@@ -14,6 +16,8 @@ import java.util.function.Function;
 
 public class ModItems {
     public static final Item COTTON = registerItem("cotton", Item::new);
+    public static final Item COTTON_SEEDS = registerItem("cotton_seeds",
+            properties -> new BlockItem(ModBlocks.COTTON_PLANT,properties.useItemDescriptionPrefix()));
 
 
 

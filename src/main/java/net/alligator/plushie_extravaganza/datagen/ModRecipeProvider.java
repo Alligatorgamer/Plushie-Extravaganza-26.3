@@ -38,21 +38,52 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .unlockedBy(getHasName(ModItems.COTTON), has(ModItems.COTTON))
                         .group("plushie")
                         .save(output);
-
-                shaped(RecipeCategory.MISC,ModBlocks.SANS_PLUSHIE)
-                        .pattern(" C ")
-                        .pattern("CCC")
-                        .pattern(" C ")
-                        .define('C', ModItems.COTTON)
-                        .unlockedBy(getHasName(ModItems.COTTON), has(ModItems.COTTON))
-                        .group("plushie")
-                        .save(output);
-
-                shapeless(RecipeCategory.MISC, ModItems.COTTON,9)
-                        .requires(ModBlocks.COMPRESSED_COTTON)
-                        .unlockedBy(getHasName(ModBlocks.COMPRESSED_COTTON),has(ModBlocks.COMPRESSED_COTTON))
-                        .group("plushie")
-                        .save(output, "cotton_from_compressed_cotton");
+                stonecutterResultFromBase(RecipeCategory.MISC,ModBlocks.SANS_PLUSHIE,ModBlocks.TEMPLATE_PLUSHIE);
+                stonecutterResultFromBase(RecipeCategory.MISC,ModBlocks.PAPYRUS_PLUSHIE,ModBlocks.TEMPLATE_PLUSHIE);
+                stonecutterResultFromBase(RecipeCategory.MISC,ModBlocks.TORIEL_PLUSHIE,ModBlocks.TEMPLATE_PLUSHIE);
+                stonecutterResultFromBase(RecipeCategory.MISC,ModBlocks.FRISK_PLUSHIE,ModBlocks.TEMPLATE_PLUSHIE);
+                stonecutterResultFromBase(RecipeCategory.MISC,ModBlocks.CHARA_PLUSHIE,ModBlocks.TEMPLATE_PLUSHIE);
+                stonecutterResultFromBase(RecipeCategory.MISC,ModBlocks.UNDYNE_PLUSHIE,ModBlocks.TEMPLATE_PLUSHIE);
+                stonecutterResultFromBase(RecipeCategory.MISC,ModBlocks.ALPHYS_PLUSHIE,ModBlocks.TEMPLATE_PLUSHIE);
+                stonecutterResultFromBase(RecipeCategory.MISC,ModBlocks.METTATON_PLUSHIE,ModBlocks.TEMPLATE_PLUSHIE);
+                stonecutterResultFromBase(RecipeCategory.MISC,ModBlocks.ASGORE_PLUSHIE,ModBlocks.TEMPLATE_PLUSHIE);
+                stonecutterResultFromBase(RecipeCategory.MISC,ModBlocks.ASRIEL_PLUSHIE,ModBlocks.TEMPLATE_PLUSHIE);
+                stonecutterResultFromBase(RecipeCategory.MISC,ModBlocks.MUFFET_PLUSHIE,ModBlocks.TEMPLATE_PLUSHIE);
+                stonecutterResultFromBase(RecipeCategory.MISC,ModBlocks.GASTER_PLUSHIE,ModBlocks.TEMPLATE_PLUSHIE);
+                stonecutterResultFromBase(RecipeCategory.MISC,ModBlocks.KRIS_LWR_PLUSHIE,ModBlocks.TEMPLATE_PLUSHIE);
+                stonecutterResultFromBase(RecipeCategory.MISC,ModBlocks.KRIS_DWR_PLUSHIE,ModBlocks.TEMPLATE_PLUSHIE);
+                stonecutterResultFromBase(RecipeCategory.MISC,ModBlocks.SUSIE_LWR_PLUSHIE,ModBlocks.TEMPLATE_PLUSHIE);
+                stonecutterResultFromBase(RecipeCategory.MISC,ModBlocks.SUSIE_DWR_PLUSHIE,ModBlocks.TEMPLATE_PLUSHIE);
+                stonecutterResultFromBase(RecipeCategory.MISC,ModBlocks.RALSEI_PLUSHIE,ModBlocks.TEMPLATE_PLUSHIE);
+                stonecutterResultFromBase(RecipeCategory.MISC,ModBlocks.RALSEI_HAT_PLUSHIE,ModBlocks.TEMPLATE_PLUSHIE);
+                stonecutterResultFromBase(RecipeCategory.MISC,ModBlocks.NOELLE_LWR_PLUSHIE,ModBlocks.TEMPLATE_PLUSHIE);
+                stonecutterResultFromBase(RecipeCategory.MISC,ModBlocks.NOELLE_DWR_PLUSHIE,ModBlocks.TEMPLATE_PLUSHIE);
+                stonecutterResultFromBase(RecipeCategory.MISC,ModBlocks.BERDLY_LWR_PLUSHIE,ModBlocks.TEMPLATE_PLUSHIE);
+                stonecutterResultFromBase(RecipeCategory.MISC,ModBlocks.BERDLY_DWR_PLUSHIE,ModBlocks.TEMPLATE_PLUSHIE);
+                stonecutterResultFromBase(RecipeCategory.MISC,ModBlocks.LANCER_PLUSHIE,ModBlocks.TEMPLATE_PLUSHIE);
+                stonecutterResultFromBase(RecipeCategory.MISC,ModBlocks.KING_PLUSHIE,ModBlocks.TEMPLATE_PLUSHIE);
+                stonecutterResultFromBase(RecipeCategory.MISC,ModBlocks.QUEEN_PLUSHIE,ModBlocks.TEMPLATE_PLUSHIE);
+                stonecutterResultFromBase(RecipeCategory.MISC,ModBlocks.JEVIL_PLUSHIE,ModBlocks.TEMPLATE_PLUSHIE);
+                stonecutterResultFromBase(RecipeCategory.MISC,ModBlocks.TENNA_PLUSHIE,ModBlocks.TEMPLATE_PLUSHIE);
+                stonecutterResultFromBase(RecipeCategory.MISC,ModBlocks.SPAMTON_PLUSHIE,ModBlocks.TEMPLATE_PLUSHIE);
+                stonecutterResultFromBase(RecipeCategory.MISC,ModBlocks.ROARING_KNIGHT_PLUSHIE,ModBlocks.TEMPLATE_PLUSHIE);
+                stonecutterResultFromBase(RecipeCategory.MISC,ModBlocks.GERSON_PLUSHIE,ModBlocks.TEMPLATE_PLUSHIE);
+                stonecutterResultFromBase(RecipeCategory.MISC,ModBlocks.FLOWERY_PLUSHIE,ModBlocks.TEMPLATE_PLUSHIE);
+                stonecutterResultFromBase(RecipeCategory.MISC,ModBlocks.ORANGE_PLUSHIE,ModBlocks.TEMPLATE_PLUSHIE);
+                stonecutterResultFromBase(RecipeCategory.MISC,ModBlocks.YELLOW_PLUSHIE,ModBlocks.TEMPLATE_PLUSHIE);
+                stonecutterResultFromBase(RecipeCategory.MISC,ModBlocks.GREEN_PLUSHIE,ModBlocks.TEMPLATE_PLUSHIE);
+                stonecutterResultFromBase(RecipeCategory.MISC,ModBlocks.AQUA_PLUSHIE,ModBlocks.TEMPLATE_PLUSHIE);
+                stonecutterResultFromBase(RecipeCategory.MISC,ModBlocks.BLUE_PLUSHIE,ModBlocks.TEMPLATE_PLUSHIE);
+                stonecutterResultFromBase(RecipeCategory.MISC,ModBlocks.SETH_PLUSHIE,ModBlocks.TEMPLATE_PLUSHIE);
+                stonecutterResultFromBase(RecipeCategory.MISC,ModBlocks.PINK_PLUSHIE,ModBlocks.TEMPLATE_PLUSHIE);
+                stonecutterResultFromBase(RecipeCategory.MISC,ModBlocks.HUNTER_SPIDER_PLUSHIE,ModBlocks.TEMPLATE_PLUSHIE);
+                stonecutterResultFromBase(RecipeCategory.MISC,ModBlocks.TUNNELMASTER_PLUSHIE,ModBlocks.TEMPLATE_PLUSHIE);
+                stonecutterResultFromBase(RecipeCategory.MISC,ModBlocks.BROTHER_PLUSHIE,ModBlocks.TEMPLATE_PLUSHIE);
+                stonecutterResultFromBase(RecipeCategory.MISC,ModBlocks.CRESCENT_PLUSHIE,ModBlocks.TEMPLATE_PLUSHIE);
+                stonecutterResultFromBase(RecipeCategory.MISC,ModBlocks.SCRUTINY_PLUSHIE,ModBlocks.TEMPLATE_PLUSHIE);
+                stonecutterResultFromBase(RecipeCategory.MISC,ModBlocks.FORTUNE_PLUSHIE,ModBlocks.TEMPLATE_PLUSHIE);
+                stonecutterResultFromBase(RecipeCategory.MISC,ModBlocks.FAMINE_PLUSHIE,ModBlocks.TEMPLATE_PLUSHIE);
+                stonecutterResultFromBase(RecipeCategory.MISC,ModBlocks.LSERA_PLUSHIE,ModBlocks.TEMPLATE_PLUSHIE);
 
             }
         };

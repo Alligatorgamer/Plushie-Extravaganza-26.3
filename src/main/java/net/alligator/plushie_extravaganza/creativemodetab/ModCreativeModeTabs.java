@@ -18,7 +18,9 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativemodetab.plushie-extravaganza.plushie_xtravaganza_items"))
                     .displayItems((parameters, output) -> {
                         output.accept(ModItems.COTTON);
+                        output.accept(ModItems.COTTON_SEEDS);
                         output.accept(ModBlocks.COMPRESSED_COTTON);
+                        output.accept(ModBlocks.TEMPLATE_PLUSHIE);
                         output.accept(ModBlocks.SANS_PLUSHIE);
                         output.accept(ModBlocks.PAPYRUS_PLUSHIE);
                         output.accept(ModBlocks.TORIEL_PLUSHIE);
@@ -29,7 +31,44 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.METTATON_PLUSHIE);
                         output.accept(ModBlocks.ASGORE_PLUSHIE);
                         output.accept(ModBlocks.ASRIEL_PLUSHIE);
-                        output.accept(ModBlocks.TEMPLATE_PLUSHIE);
+                        output.accept(ModBlocks.MUFFET_PLUSHIE);
+                        output.accept(ModBlocks.GASTER_PLUSHIE);
+                        output.accept(ModBlocks.KRIS_DWR_PLUSHIE);
+                        output.accept(ModBlocks.KRIS_LWR_PLUSHIE);
+                        output.accept(ModBlocks.SUSIE_DWR_PLUSHIE);
+                        output.accept(ModBlocks.SUSIE_LWR_PLUSHIE);
+                        output.accept(ModBlocks.RALSEI_PLUSHIE);
+                        output.accept(ModBlocks.RALSEI_HAT_PLUSHIE);
+                        output.accept(ModBlocks.NOELLE_LWR_PLUSHIE);
+                        output.accept(ModBlocks.NOELLE_DWR_PLUSHIE);
+                        output.accept(ModBlocks.BERDLY_LWR_PLUSHIE);
+                        output.accept(ModBlocks.BERDLY_DWR_PLUSHIE);
+                        output.accept(ModBlocks.LANCER_PLUSHIE);
+                        output.accept(ModBlocks.KING_PLUSHIE);
+                        output.accept(ModBlocks.QUEEN_PLUSHIE);
+                        output.accept(ModBlocks.JEVIL_PLUSHIE);
+                        output.accept(ModBlocks.TENNA_PLUSHIE);
+                        output.accept(ModBlocks.SPAMTON_PLUSHIE);
+                        output.accept(ModBlocks.ROARING_KNIGHT_PLUSHIE);
+                        output.accept(ModBlocks.GERSON_PLUSHIE);
+                        output.accept(ModBlocks.FLOWERY_PLUSHIE);
+                        output.accept(ModBlocks.ORANGE_PLUSHIE);
+                        output.accept(ModBlocks.YELLOW_PLUSHIE);
+                        output.accept(ModBlocks.GREEN_PLUSHIE);
+                        output.accept(ModBlocks.AQUA_PLUSHIE);
+                        output.accept(ModBlocks.SETH_PLUSHIE);
+                        output.accept(ModBlocks.PINK_PLUSHIE);
+                        output.accept(ModBlocks.BLUE_PLUSHIE);
+                        output.accept(ModBlocks.TUNNELMASTER_PLUSHIE);
+                        output.accept(ModBlocks.HUNTER_SPIDER_PLUSHIE);
+                        output.accept(ModBlocks.CIPHER_PLUSHIE);
+                        output.accept(ModBlocks.BROTHER_PLUSHIE);
+                        output.accept(ModBlocks.CRESCENT_PLUSHIE);
+                        output.accept(ModBlocks.FORTUNE_PLUSHIE);
+                        output.accept(ModBlocks.SCRUTINY_PLUSHIE);
+                        output.accept(ModBlocks.LSERA_PLUSHIE);
+                        output.accept(ModBlocks.FAMINE_PLUSHIE);
+
 
 
                     }).build());

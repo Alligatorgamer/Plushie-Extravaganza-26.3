@@ -7,6 +7,7 @@ import net.alligator.plushie_extravaganza.block.entity.renderer.PlushieEntityRen
 import net.alligator.plushie_extravaganza.sound.ModSounds;
 import net.minecraft.client.model.Model;
 import net.minecraft.core.BlockPos;
+import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionResult;
@@ -36,9 +37,13 @@ public class Plushie extends BaseEntityBlock {
     public static final VoxelShape SHAPE = Block.box(2,0,2,14,15,14);
 
 
-    public Plushie(final Properties properties) {
+    public Plushie(final Properties properties, SoundEvent plushSquish, SoundEvent customSound) {
         super(properties);
+        this.plushSquish = plushSquish;
+        this.customSound = customSound;
     }
+    private final SoundEvent plushSquish;
+    private final SoundEvent customSound;
 
     @Override
     protected VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
@@ -73,10 +78,12 @@ public class Plushie extends BaseEntityBlock {
         if (!(level.getBlockEntity(pos) instanceof PlushieEntity plushieEntity)) {
             return super.useWithoutItem(state, level, pos, player, hitResult);
         }
-        level.playSound(null,pos, ModSounds.PLUSHIE_SQUISH,SoundSource.BLOCKS,1,
+        level.playSound(null,pos, plushSquish,SoundSource.BLOCKS,1f,
                 0.8f + level.getRandom().nextFloat()*0.4f);
+        level.playSound(null,pos, customSound,SoundSource.BLOCKS,1,1);
         plushieEntity.setSquish(0.5f);
         plushieEntity.setTimer(plushieEntity.UNSQUISH);
+        plushieEntity.setChanged();
 
             return InteractionResult.SUCCESS;
 
