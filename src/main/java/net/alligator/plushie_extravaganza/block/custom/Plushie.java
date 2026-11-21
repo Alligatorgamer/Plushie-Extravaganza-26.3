@@ -76,17 +76,20 @@ public class Plushie extends BaseEntityBlock {
     @Override
     protected InteractionResult useWithoutItem(BlockState state, Level level, BlockPos pos, Player player, BlockHitResult hitResult) {
         if (level.isClientSide()) {
-            return InteractionResult.CONSUME;
+            return InteractionResult.SUCCESS;
         }
         if (!(level.getBlockEntity(pos) instanceof PlushieEntity plushieEntity)) {
             return super.useWithoutItem(state, level, pos, player, hitResult);
         }
 
-        level.playSound(null,pos, plushSquish,SoundSource.BLOCKS,1f,
-                0.8f + level.getRandom().nextFloat()*0.4f);
-        level.playSound(null,pos, customSound,SoundSource.BLOCKS,1,1);
         plushieEntity.setTimer(plushieEntity.UNSQUISH);
         plushieEntity.setChanged();
+
+        level.playSound(null,pos, plushSquish,SoundSource.BLOCKS,1f,
+                0.8f + level.getRandom().nextFloat()*0.4f);
+        if (customSound!=null) {
+            level.playSound(null,pos, customSound,SoundSource.BLOCKS,1,1);
+        }
 
             return InteractionResult.SUCCESS;
 

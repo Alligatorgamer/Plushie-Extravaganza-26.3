@@ -70,7 +70,7 @@ public class PlushieEntity extends BlockEntity {
         return ClientboundBlockEntityDataPacket.create(this);
     }
 
-    public static final int UNSQUISH = 4;
+    public static final int UNSQUISH = 3;
 
     public static void tick(Level level, BlockPos blockPos, BlockState blockState, PlushieEntity plushieEntity) {
         if (plushieEntity.getTimer() > 0) {

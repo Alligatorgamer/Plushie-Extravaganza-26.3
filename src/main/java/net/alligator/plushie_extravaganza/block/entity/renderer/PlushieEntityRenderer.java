@@ -34,9 +34,9 @@ public class PlushieEntityRenderer implements BlockEntityRenderer<PlushieEntity,
                                    float partialTicks, Vec3 cameraPosition, ModelFeatureRenderer.@Nullable CrumblingOverlay breakProgress) {
         BlockEntityRenderer.super.extractRenderState(blockEntity, state, partialTicks, cameraPosition, breakProgress);
 
-
+        //(float) (1-(-(Math.cos(Math.PI * (state.timer-partialTicks)) -1) /4)*0.5);
         state.timer = blockEntity.getTimer();
-        state.squish = (float) (1 - (Math.pow(Math.max(state.timer-partialTicks,0),1)/4) * 0.5f);
+        state.squish = (float) (1 - (Math.pow(Math.max(state.timer-partialTicks,0),1)/3) * 0.3f);
 
 
         blockModelResolver.update(state.blockModelRenderState,
